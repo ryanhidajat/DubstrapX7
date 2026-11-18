@@ -1,0 +1,43 @@
+/*
+Theme Name: DubstrapX7
+Theme URI: https://github.com/Dewitech/dubstrap
+Author: Dewitech & Modern Block Architect
+Author URI: http://dewitech.com
+Description: DubstrapX7 is the 2026 evolution of Dewitech Dubstrap. Dark-mode by default, local Alpine.js & Lucide, Tailwind CSS utility stack, and Bootstrap 2.3-inspired components rebuilt for the block era.
+Version: 7.0.0
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dubstrapx7
+Tags: block-themes, full-site-editing, custom-colors, custom-typography, translation-ready, featured-images, threaded-comments, dark-mode
+*/
+
+article {margin-top:60px}
+.portfolio-img {margin-bottom:20px}
+.footer-bottom {margin-top:20px;}
+.item-cat {margin-bottom:20px; height:300px; overflow:hidden;}
+.item-cat2 {margin-bottom:20px; height:300px; overflow:hidden;}
+ul.social-icons  {list-style-type:none; font-size:20px}
+.social-icons li {display:inline; padding:0 5px;}
+.social-icons a {color:#333;}
+ul.meta {list-style-type:none; margin:-10px 0 10px 0;}
+.meta li {display:inline;}
+ul.contact-widget {list-style-type:none; margin:0;}
+.contact-widget i{font-size:20px;}
+.contact-widget li {padding: 2px 0;}
+#flickr_badge_wrapper img {
+    border-color: #2B2F33;
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+    height: 54px;
+    margin: 0 0 7px 7px;
+    transition: all 0.3s ease-out 0s;
+    width: 54px;
+}
+.not-found  {padding-top: 50px;}
+.not-found h1 {font-size: 120px; padding-bottom: 20px;}
+.not-found-icon {display: block; font-size: 220px; line-height: 1em; text-align: center;}
+.featured {text-align:center;}

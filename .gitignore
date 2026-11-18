@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+package-lock.json
+package.json
+
+# Build assets
+assets/build/output.css
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

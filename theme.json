@@ -1,0 +1,160 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "1170px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "custom": true,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "dubstrap-dark",
+          "color": "#0a0a0a",
+          "name": "Dubstrap Dark"
+        },
+        {
+          "slug": "dubstrap-navbar",
+          "color": "#111111",
+          "name": "Navbar Dark"
+        },
+        {
+          "slug": "dubstrap-accent",
+          "color": "#0088cc",
+          "name": "Bootstrap Classic Cyan"
+        },
+        {
+          "slug": "dubstrap-accent-hover",
+          "color": "#005580",
+          "name": "Bootstrap Cyan Hover"
+        },
+        {
+          "slug": "dubstrap-body",
+          "color": "#e5e5e5",
+          "name": "Text Body"
+        },
+        {
+          "slug": "dubstrap-muted",
+          "color": "#777777",
+          "name": "Text Muted"
+        },
+        {
+          "slug": "dubstrap-border",
+          "color": "#1f1f1f",
+          "name": "Border Dark"
+        },
+        {
+          "slug": "dubstrap-card",
+          "color": "#171717",
+          "name": "Card Surface"
+        },
+        {
+          "slug": "dubstrap-footer",
+          "color": "#0a0a0a",
+          "name": "Footer Dark"
+        },
+        {
+          "slug": "base",
+          "color": "#ffffff",
+          "name": "White"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "name": "System UI",
+          "slug": "system"
+        }
+      ],
+      "fontSizes": [
+        {
+          "fluid": { "min": "0.75rem", "max": "0.85rem" },
+          "size": "0.85rem",
+          "slug": "small",
+          "name": "Small"
+        },
+        {
+          "fluid": { "min": "0.95rem", "max": "1rem" },
+          "size": "1rem",
+          "slug": "normal",
+          "name": "Normal"
+        },
+        {
+          "fluid": { "min": "1.15rem", "max": "1.25rem" },
+          "size": "1.25rem",
+          "slug": "medium",
+          "name": "Medium"
+        },
+        {
+          "fluid": { "min": "1.4rem", "max": "1.75rem" },
+          "size": "1.75rem",
+          "slug": "large",
+          "name": "Large"
+        },
+        {
+          "fluid": { "min": "1.85rem", "max": "2.25rem" },
+          "size": "2.25rem",
+          "slug": "x-large",
+          "name": "Extra Large"
+        },
+        {
+          "fluid": { "min": "2.5rem", "max": "3.5rem" },
+          "size": "3.5rem",
+          "slug": "xx-large",
+          "name": "Hero Title"
+        }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "em", "rem", "vh", "vw", "%"]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#0a0a0a",
+      "text": "var(--wp--preset--color--dubstrap-body)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system)",
+      "fontSize": "var(--wp--preset--font-size--normal)",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--dubstrap-accent)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--dubstrap-accent-hover)"
+          }
+        }
+      },
+      "heading": {
+        "color": {
+          "text": "#ffffff"
+        },
+        "typography": {
+          "fontWeight": "700",
+          "lineHeight": "1.25"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--dubstrap-accent)",
+          "text": "#ffffff"
+        },
+        "border": {
+          "radius": "4px"
+        }
+      }
+    }
+  }
+}

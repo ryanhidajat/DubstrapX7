@@ -1,0 +1,90 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Dark-mode Dubstrap navbar gradient */
+  .dubstrap-navbar {
+    @apply bg-gradient-to-b from-[#111111] to-[#050505] border-b border-[#1f1f1f] text-white shadow-md;
+  }
+
+  .dubstrap-navbar a {
+    @apply text-gray-300 hover:text-white transition-colors duration-200;
+  }
+
+  /* Nav menu: hilangkan bullet, rata horizontal, fix floating */
+  .dubstrap-nav-menu {
+    @apply list-none p-0 m-0;
+  }
+
+  .dubstrap-nav-menu li {
+    @apply list-none;
+  }
+
+  .dubstrap-nav-menu > li {
+    @apply relative;
+  }
+
+  .dubstrap-nav-menu a {
+    @apply block px-3 py-2 rounded hover:bg-[#171717] hover:text-white transition-colors;
+  }
+
+  /* Dropdown submenu */
+  .dubstrap-nav-menu .sub-menu {
+    @apply absolute left-0 top-full mt-1 w-48 bg-[#111111] border border-[#1f1f1f] rounded shadow-lg opacity-0 invisible transition-opacity duration-200 z-50;
+    display: none;
+  }
+
+  .dubstrap-nav-menu > li:hover > .sub-menu,
+  .dubstrap-nav-menu > li.show > .sub-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dubstrap-nav-menu .sub-menu li {
+    @apply block;
+  }
+
+  .dubstrap-nav-menu .sub-menu a {
+    @apply px-4 py-2 text-sm hover:bg-[#171717] hover:text-[#0088cc];
+  }
+
+  .dubstrap-nav-menu .menu-item-has-children > a::after {
+    @apply ml-1 inline-block text-xs;
+    content: "▾";
+  }
+
+  /* Dubstrap push button & flatshadow icon box */
+  .dubstrap-icon-box {
+    @apply w-16 h-16 rounded-full bg-[#0088cc] text-white flex items-center justify-center text-2xl shadow-md transition-transform duration-300 hover:scale-105;
+  }
+
+  .dubstrap-btn-primary {
+    @apply inline-flex items-center justify-center px-5 py-2.5 bg-gradient-to-b from-[#0088cc] to-[#005580] text-white text-sm font-semibold rounded shadow hover:from-[#005580] hover:to-[#003d5c] transition-all;
+  }
+
+  .dubstrap-card {
+    @apply bg-[#171717] border border-[#1f1f1f] rounded-lg p-6 hover:shadow-lg transition-all duration-300 text-gray-200;
+  }
+
+  .dark-mode-toggle {
+    @apply p-2 rounded-lg bg-[#171717] border border-[#1f1f1f] text-white hover:bg-[#0088cc] transition-colors cursor-pointer;
+  }
+
+  /* Company profile section spacing */
+  .section {
+    @apply py-24 bg-[#0a0a0a];
+  }
+
+  .section-alt {
+    @apply bg-[#0f0f0f];
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-white mb-12 text-center tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-gray-400 text-center mb-16 max-w-2xl mx-auto text-lg;
+  }
+}
